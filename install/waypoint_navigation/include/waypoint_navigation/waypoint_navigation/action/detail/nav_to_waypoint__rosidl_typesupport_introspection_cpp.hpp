@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_typesupport_introspection_cpp/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_introspection_cpp.hpp

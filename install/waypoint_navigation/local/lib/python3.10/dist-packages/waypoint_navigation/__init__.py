@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_generator_py/waypoint_navigation/__init__.py

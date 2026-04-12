@@ -1,8 +1,0 @@
-# Goal: Waypoint coordinates (x,y,z)
-geometry_msgs/Pose waypoint
----
-# Result: Time taken to reach the goal (seconds)
-int32 travel_time
----
-# Feedback: Current pose during navigation
-geometry_msgs/PoseStamped current_position

@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_generator_py/waypoint_navigation/action/_nav_to_waypoint_s.c

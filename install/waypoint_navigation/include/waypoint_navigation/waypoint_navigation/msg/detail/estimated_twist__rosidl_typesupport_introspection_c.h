@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_introspection_c.h

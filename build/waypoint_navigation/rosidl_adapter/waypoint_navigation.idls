@@ -1,5 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_adapter/waypoint_navigation:srv/GetWayPoints.idl
-/home/monith/test_rover/build/waypoint_navigation/rosidl_adapter/waypoint_navigation:action/NavToWaypoint.idl
-/home/monith/test_rover/build/waypoint_navigation/rosidl_adapter/waypoint_navigation:msg/Pwm.idl
-/home/monith/test_rover/build/waypoint_navigation/rosidl_adapter/waypoint_navigation:msg/EstimatedTwist.idl
-/home/monith/test_rover/build/waypoint_navigation/rosidl_adapter/waypoint_navigation:msg/EstimatedOdom.idl

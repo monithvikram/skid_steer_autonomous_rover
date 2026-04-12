@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_generator_rs/waypoint_navigation/rust/src/srv.rs

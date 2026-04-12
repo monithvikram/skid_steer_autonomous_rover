@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_generator_cpp/waypoint_navigation/srv/get_way_points.hpp

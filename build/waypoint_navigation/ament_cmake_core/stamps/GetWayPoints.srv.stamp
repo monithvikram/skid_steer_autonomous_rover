@@ -1,4 +1,0 @@
-bool get_waypoints
----
-geometry_msgs/PoseArray waypoints
-

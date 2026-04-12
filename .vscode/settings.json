@@ -1,9 +1,0 @@
-{
-    "ROS2.distro": "humble",
-    "python.autoComplete.extraPaths": [
-        "/home/monith/autonomous_rover/build/rover_control",
-        "/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages",
-        "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
-}

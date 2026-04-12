@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_fastrtps_c.h

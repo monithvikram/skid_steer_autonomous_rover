@@ -1,1 +1,0 @@
-/home/monith/test_rover/build/waypoint_navigation/ament_cmake_environment_hooks/local_setup.bash
