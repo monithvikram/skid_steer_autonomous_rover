@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<launch>
+    <let name = "pkg_share" value = "$(find-pkg-share rover_control)"/>
+    <let name = "world_file" value = "$(var pkg_share)/worlds/shaastra_arena.world"/>
+    <let name = "urdf_file" value = "$(var pkg_share)/urdf/rover.urdf.xacro"/>
+    <let name = "rviz_config" value = "$(var pkg_share)/rviz/rover_config_.rviz"/>
+
+    <executable cmd = "gazebo --verbose -s libgazebo_ros_factory.so $(var world_file)" output = "screen" >
+        <env name = "GAZEBO_MASTER_URI" value = "http://localhost:11346"/>
+    </executable >
+
+    <node pkg = "robot_state_publisher" exec = "robot_state_publisher" name = "robot_state_publisher" output = "screen" >
+        <param name = "robot_description" value = "$(command 'xacro $(var urdf_file)')" type="str"/>
+        <param name = "use_sim_time" value = "true"/>
+    </node >
+
+
+    <executable cmd="sleep 3 &amp;&amp; ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity rover -x 1.0 -y 1.0 -z 0.5 -Y 0.0"
+                name="spawn_entity" shell="true" />
+
+    <executable cmd="sleep 6 &amp;&amp; ros2 run controller_manager spawner joint_state_broadcaster"
+                name="jsb_spawner" shell="true" />
+
+    <executable cmd="sleep 8 &amp;&amp; ros2 run controller_manager spawner diff_drive_controller"
+                name="ddc_spawner" shell="true" />
+
+    <executable cmd="sleep 10 &amp;&amp; ros2 run rviz2 rviz2 -d $(var rviz_config)"
+                name="rviz2" shell="true" />
+
+</launch >

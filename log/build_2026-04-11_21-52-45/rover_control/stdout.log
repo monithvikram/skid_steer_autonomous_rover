@@ -1,0 +1,74 @@
+running develop
+Removing /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+running egg_info
+writing ../../build/rover_control/rover_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_control/rover_control.egg-info/dependency_links.txt
+writing entry points to ../../build/rover_control/rover_control.egg-info/entry_points.txt
+writing requirements to ../../build/rover_control/rover_control.egg-info/requires.txt
+writing top-level names to ../../build/rover_control/rover_control.egg-info/top_level.txt
+reading manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/monith/test_rover/build/rover_control/build
+creating /home/monith/test_rover/build/rover_control/build/lib
+creating /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/sim_nav_node.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/waypoint_client.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/nav_node_rely_on_ddc_odom.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/waypoint_server.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/odom_validator.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/__init__.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/teleop_to_pwm.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/pwm_to_odom_estimator.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+copying rover_control/datalogger.py -> /home/monith/test_rover/build/rover_control/build/lib/rover_control
+running install
+running install_lib
+creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/sim_nav_node.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/waypoint_client.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/nav_node_rely_on_ddc_odom.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/waypoint_server.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/odom_validator.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/__init__.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/teleop_to_pwm.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/pwm_to_odom_estimator.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/monith/test_rover/build/rover_control/build/lib/rover_control/datalogger.py -> /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/sim_nav_node.py to sim_nav_node.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/waypoint_client.py to waypoint_client.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/nav_node_rely_on_ddc_odom.py to nav_node_rely_on_ddc_odom.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/waypoint_server.py to waypoint_server.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/odom_validator.py to odom_validator.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/teleop_to_pwm.py to teleop_to_pwm.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/pwm_to_odom_estimator.py to pwm_to_odom_estimator.cpython-310.pyc
+byte-compiling /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control/datalogger.py to datalogger.cpython-310.pyc
+running install_data
+copying resource/rover_control -> /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/monith/test_rover/install/rover_control/share/rover_control
+copying launch/arenasim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+copying launch/robotsim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+copying launch/roversim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+copying urdf/robot.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying urdf/rover.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying urdf/robot.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying urdf/robot_core_lr.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying urdf/rover.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying urdf/rover_base.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+copying worlds/shaastra_arena.world -> /home/monith/test_rover/install/rover_control/share/rover_control/worlds
+copying config/controllers.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+copying config/robot_controller.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+copying config/controllert.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+copying rviz/odom_check_.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz
+copying rviz/rover_config_.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz
+running install_egg_info
+Copying ../../build/rover_control/rover_control.egg-info to /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing nav_node_based_on_ddc_odom script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing odom_validator script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing pwm_to_odom script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing sim_nav_node script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing teleop_to_pwm script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing waypoint_client script to /home/monith/test_rover/install/rover_control/lib/rover_control
+Installing waypoint_server script to /home/monith/test_rover/install/rover_control/lib/rover_control
+writing list of installed files to '/home/monith/test_rover/build/rover_control/install.log'

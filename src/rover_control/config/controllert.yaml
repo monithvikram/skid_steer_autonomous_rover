@@ -1,0 +1,35 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz — good value
+
+    joint_state_broadcaster:
+      type: "joint_state_broadcaster/JointStateBroadcaster"
+
+    diff_drive_controller:
+      type: "diff_drive_controller/DiffDriveController"
+
+
+diff_drive_controller:
+  ros__parameters:
+    left_wheel_names: ["fl_joint", "rl_joint"]
+    right_wheel_names: ["fr_joint", "rr_joint"]
+    wheel_separation: 0.31
+    wheel_radius: 0.0625
+    publish_rate: 50.0
+    use_stamped_vel: false
+
+    linear.x.has_velocity_limits: true
+    linear.x.max_velocity: 1.0
+    linear.x.min_velocity: -1.0
+    linear.x.has_acceleration_limits: true
+    linear.x.max_acceleration: 2.0
+    linear.x.min_acceleration: -2.0
+
+    angular.z.has_velocity_limits: true
+    angular.z.max_velocity: 2.0
+    angular.z.min_velocity: -2.0
+    angular.z.has_acceleration_limits: true
+    angular.z.max_acceleration: 4.0
+    pose_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 0.03]
+    twist_covariance_diagonal: [0.001, 0.0, 0.0, 0.0, 0.0, 0.03]
+    use_stamped_vel: false   # → commands on /cmd_vel (unstamped Twist)

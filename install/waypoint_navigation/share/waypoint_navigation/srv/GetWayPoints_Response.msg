@@ -1,0 +1,1 @@
+/home/monith/test_rover/build/waypoint_navigation/rosidl_cmake/srv/GetWayPoints_Response.msg

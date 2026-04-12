@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+	<xacro:include filename="robot_core_lr.xacro"/>
+	<xacro:include filename="robot.ros2_control.xacro"/>
+
+    <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>/home/monith/test_rover/src/rover_control/config/robot_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>    

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <ros2_control name="GazeboSystemHWI" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+
+        <joint name="fl_joint">
+            <command_interface name="velocity">
+                <param name="min">-3</param>
+                <param name="max">3</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="fr_joint">
+            <command_interface name="velocity">
+                <param name="min">-3</param>
+                <param name="max">3</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="rl_joint">
+            <command_interface name="velocity">
+                <param name="min">-3</param>
+                <param name="max">3</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <joint name="rr_joint">
+            <command_interface name="velocity">
+                <param name="min">-3</param>
+                <param name="max">3</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+</robot>

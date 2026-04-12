@@ -1,0 +1,488 @@
+[0.000000] (-) TimerEvent: {}
+[0.000419] (rover_control) JobQueued: {'identifier': 'rover_control', 'dependencies': OrderedDict()}
+[0.000449] (waypoint_navigation) JobQueued: {'identifier': 'waypoint_navigation', 'dependencies': OrderedDict()}
+[0.000466] (rover_control) JobStarted: {'identifier': 'rover_control'}
+[0.009763] (waypoint_navigation) JobStarted: {'identifier': 'waypoint_navigation'}
+[0.099379] (-) TimerEvent: {}
+[0.199772] (-) TimerEvent: {}
+[0.269886] (waypoint_navigation) JobProgress: {'identifier': 'waypoint_navigation', 'progress': 'cmake'}
+[0.270530] (waypoint_navigation) Command: {'cmd': ['/usr/bin/cmake', '/home/monith/test_rover/src/waypoint_navigation', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/monith/test_rover/install/waypoint_navigation'], 'cwd': '/home/monith/test_rover/build/waypoint_navigation', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:pkg_resources is deprecated,ignore:2.22.1ubuntu1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'monith'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/monith/test_rover/install/waypoint_navigation/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monith'), ('OLDPWD', '/home/monith'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11346'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1423'), ('SYSTEMD_EXEC_PID', '1591'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9517'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/monith/test_rover/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monith'), ('JOURNAL_STREAM', '8:16435'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monith'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/monith/.gazebo/models:/usr/share/gazebo-11/models:/opt/ros/humble/share:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/monith/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/obsession:@/tmp/.ICE-unix/1567,unix/obsession:/tmp/.ICE-unix/1567'), ('INVOCATION_ID', '7af63f03e2f144159cb8b7bb68d755a0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q6KKN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ce3b74f-a481-44af-a38e-a5d820515d8e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monith/test_rover/build/waypoint_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages:/home/monith/test_rover/build/rover_control:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble')]), 'shell': False}
+[0.299909] (-) TimerEvent: {}
+[0.356174] (waypoint_navigation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400048] (-) TimerEvent: {}
+[0.427724] (waypoint_navigation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.438333] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500175] (-) TimerEvent: {}
+[0.523955] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.530747] (waypoint_navigation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.531127] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.531688] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.535278] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600271] (-) TimerEvent: {}
+[0.631339] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.639223] (waypoint_navigation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.639610] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.640046] (waypoint_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.646542] (waypoint_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700458] (-) TimerEvent: {}
+[0.792416] (rover_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/monith/test_rover/build/rover_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/monith/test_rover/build/rover_control', 'env': {'PYTHONWARNINGS': 'ignore:pkg_resources is deprecated,ignore:2.22.1ubuntu1', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'monith', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/monith/test_rover/install/waypoint_navigation/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/monith', 'OLDPWD': '/home/monith', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'GAZEBO_MASTER_URI': 'http://localhost:11346', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1423', 'SYSTEMD_EXEC_PID': '1591', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '9517', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/monith/test_rover/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'monith', 'JOURNAL_STREAM': '8:16435', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'monith', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/monith/.gazebo/models:/usr/share/gazebo-11/models:/opt/ros/humble/share:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/monith/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/obsession:@/tmp/.ICE-unix/1567,unix/obsession:/tmp/.ICE-unix/1567', 'INVOCATION_ID': '7af63f03e2f144159cb8b7bb68d755a0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_IN', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Q6KKN3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:5ce3b74f-a481-44af-a38e-a5d820515d8e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/monith/test_rover/build/rover_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages:/home/monith/test_rover/build/rover_control:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/monith/test_rover/install/waypoint_navigation'}, 'shell': False}
+[0.800588] (-) TimerEvent: {}
+[0.832742] (waypoint_navigation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.900731] (-) TimerEvent: {}
+[0.908639] (waypoint_navigation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.944545] (waypoint_navigation) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.2 (/opt/ros/humble/share/rcl_interfaces/cmake)\n'}
+[0.992457] (waypoint_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.999254] (waypoint_navigation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.000858] (-) TimerEvent: {}
+[1.011989] (waypoint_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.025558] (rover_control) StdoutLine: {'line': b'running develop\n'}
+[1.029294] (waypoint_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.051523] (waypoint_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.081433] (waypoint_navigation) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.095685] (waypoint_navigation) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[1.100982] (-) TimerEvent: {}
+[1.125109] (waypoint_navigation) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.140688] (waypoint_navigation) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.156428] (rover_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.156668] (rover_control) StdoutLine: {'line': b'creating rover_control.egg-info\n'}
+[1.156786] (rover_control) StdoutLine: {'line': b'writing rover_control.egg-info/PKG-INFO\n'}
+[1.156945] (rover_control) StdoutLine: {'line': b'writing dependency_links to rover_control.egg-info/dependency_links.txt\n'}
+[1.157130] (rover_control) StdoutLine: {'line': b'writing entry points to rover_control.egg-info/entry_points.txt\n'}
+[1.157364] (rover_control) StdoutLine: {'line': b'writing requirements to rover_control.egg-info/requires.txt\n'}
+[1.157569] (rover_control) StdoutLine: {'line': b'writing top-level names to rover_control.egg-info/top_level.txt\n'}
+[1.157972] (rover_control) StdoutLine: {'line': b"writing manifest file 'rover_control.egg-info/SOURCES.txt'\n"}
+[1.161486] (rover_control) StdoutLine: {'line': b"reading manifest file 'rover_control.egg-info/SOURCES.txt'\n"}
+[1.162708] (rover_control) StdoutLine: {'line': b"writing manifest file 'rover_control.egg-info/SOURCES.txt'\n"}
+[1.164818] (waypoint_navigation) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.165071] (rover_control) StdoutLine: {'line': b'running build_ext\n'}
+[1.165142] (rover_control) StdoutLine: {'line': b'Creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)\n'}
+[1.166150] (rover_control) StdoutLine: {'line': b'Installing nav_node script to /home/monith/test_rover/install/rover_control/lib/rover_control\n'}
+[1.166375] (rover_control) StdoutLine: {'line': b'Installing pwm_decoder script to /home/monith/test_rover/install/rover_control/lib/rover_control\n'}
+[1.166522] (rover_control) StdoutLine: {'line': b'Installing pwm_translator script to /home/monith/test_rover/install/rover_control/lib/rover_control\n'}
+[1.166650] (rover_control) StdoutLine: {'line': b'Installing waypoint_client script to /home/monith/test_rover/install/rover_control/lib/rover_control\n'}
+[1.166767] (rover_control) StdoutLine: {'line': b'Installing waypoint_server script to /home/monith/test_rover/install/rover_control/lib/rover_control\n'}
+[1.167060] (rover_control) StdoutLine: {'line': b'\n'}
+[1.167140] (rover_control) StdoutLine: {'line': b'Installed /home/monith/test_rover/build/rover_control\n'}
+[1.167231] (rover_control) StdoutLine: {'line': b'running symlink_data\n'}
+[1.167290] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/ament_index\n'}
+[1.167382] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index\n'}
+[1.167480] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages\n'}
+[1.167605] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/resource/rover_control -> /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages\n'}
+[1.167716] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/package.xml -> /home/monith/test_rover/install/rover_control/share/rover_control\n'}
+[1.167792] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/rover_control/launch\n'}
+[1.167890] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/launch/roversim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch\n'}
+[1.167959] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/launch/robotsim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch\n'}
+[1.168037] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/launch/arenasim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch\n'}
+[1.168106] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168202] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168303] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover_base.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168413] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168519] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168642] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168778] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot_core_lr.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf\n'}
+[1.168869] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/rover_control/worlds\n'}
+[1.168979] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/worlds/shaastra_arena.world -> /home/monith/test_rover/install/rover_control/share/rover_control/worlds\n'}
+[1.169062] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/rover_control/config\n'}
+[1.169148] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/config/controllert.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config\n'}
+[1.169216] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/config/robot_controller.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config\n'}
+[1.169328] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/config/controllers.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config\n'}
+[1.169418] (rover_control) StdoutLine: {'line': b'creating /home/monith/test_rover/install/rover_control/share/rover_control/rviz\n'}
+[1.169499] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/rviz/odom_check_.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz\n'}
+[1.169728] (rover_control) StdoutLine: {'line': b'symbolically linking /home/monith/test_rover/build/rover_control/rviz/rover_config_.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz\n'}
+[1.201088] (-) TimerEvent: {}
+[1.228079] (rover_control) CommandEnded: {'returncode': 0}
+[1.246113] (rover_control) JobEnded: {'identifier': 'rover_control', 'rc': 0}
+[1.301219] (-) TimerEvent: {}
+[1.401622] (-) TimerEvent: {}
+[1.502004] (-) TimerEvent: {}
+[1.543666] (waypoint_navigation) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.602135] (-) TimerEvent: {}
+[1.702510] (-) TimerEvent: {}
+[1.802915] (-) TimerEvent: {}
+[1.903251] (-) TimerEvent: {}
+[2.003599] (-) TimerEvent: {}
+[2.048473] (waypoint_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.103742] (-) TimerEvent: {}
+[2.204110] (-) TimerEvent: {}
+[2.245988] (waypoint_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.272359] (waypoint_navigation) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.274483] (waypoint_navigation) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.304265] (-) TimerEvent: {}
+[2.305202] (waypoint_navigation) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.305490] (waypoint_navigation) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.305644] (waypoint_navigation) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.305764] (waypoint_navigation) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.330555] (waypoint_navigation) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.404376] (-) TimerEvent: {}
+[2.504690] (-) TimerEvent: {}
+[2.520955] (waypoint_navigation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.548993] (waypoint_navigation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.550906] (waypoint_navigation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.555308] (waypoint_navigation) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.604838] (-) TimerEvent: {}
+[2.608964] (waypoint_navigation) StdoutLine: {'line': b'-- Generating done\n'}
+[2.624374] (waypoint_navigation) StdoutLine: {'line': b'-- Build files have been written to: /home/monith/test_rover/build/waypoint_navigation\n'}
+[2.639275] (waypoint_navigation) CommandEnded: {'returncode': 0}
+[2.640094] (waypoint_navigation) JobProgress: {'identifier': 'waypoint_navigation', 'progress': 'build'}
+[2.641301] (waypoint_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/monith/test_rover/build/waypoint_navigation', '--', '-j8', '-l8'], 'cwd': '/home/monith/test_rover/build/waypoint_navigation', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:pkg_resources is deprecated,ignore:2.22.1ubuntu1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'monith'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/monith/test_rover/install/waypoint_navigation/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monith'), ('OLDPWD', '/home/monith'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11346'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1423'), ('SYSTEMD_EXEC_PID', '1591'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9517'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/monith/test_rover/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monith'), ('JOURNAL_STREAM', '8:16435'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monith'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/monith/.gazebo/models:/usr/share/gazebo-11/models:/opt/ros/humble/share:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/monith/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/obsession:@/tmp/.ICE-unix/1567,unix/obsession:/tmp/.ICE-unix/1567'), ('INVOCATION_ID', '7af63f03e2f144159cb8b7bb68d755a0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q6KKN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ce3b74f-a481-44af-a38e-a5d820515d8e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monith/test_rover/build/waypoint_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages:/home/monith/test_rover/build/rover_control:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble')]), 'shell': False}
+[2.695917] (waypoint_navigation) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.704965] (-) TimerEvent: {}
+[2.709238] (waypoint_navigation) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.709559] (waypoint_navigation) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[2.720364] (waypoint_navigation) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_waypoint_navigation\n'}
+[2.805073] (-) TimerEvent: {}
+[2.905456] (-) TimerEvent: {}
+[3.002105] (waypoint_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[3.002913] (waypoint_navigation) StdoutLine: {'line': b'creating waypoint_navigation.egg-info\n'}
+[3.003209] (waypoint_navigation) StdoutLine: {'line': b'writing waypoint_navigation.egg-info/PKG-INFO\n'}
+[3.003489] (waypoint_navigation) StdoutLine: {'line': b'writing dependency_links to waypoint_navigation.egg-info/dependency_links.txt\n'}
+[3.003686] (waypoint_navigation) StdoutLine: {'line': b'writing top-level names to waypoint_navigation.egg-info/top_level.txt\n'}
+[3.003993] (waypoint_navigation) StdoutLine: {'line': b"writing manifest file 'waypoint_navigation.egg-info/SOURCES.txt'\n"}
+[3.005553] (-) TimerEvent: {}
+[3.006492] (waypoint_navigation) StdoutLine: {'line': b"reading manifest file 'waypoint_navigation.egg-info/SOURCES.txt'\n"}
+[3.007294] (waypoint_navigation) StdoutLine: {'line': b"writing manifest file 'waypoint_navigation.egg-info/SOURCES.txt'\n"}
+[3.055798] (waypoint_navigation) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_waypoint_navigation_egg\n'}
+[3.105712] (-) TimerEvent: {}
+[3.141749] (waypoint_navigation) StdoutLine: {'line': b'[  4%] Built target waypoint_navigation__rs\n'}
+[3.205843] (-) TimerEvent: {}
+[3.306289] (-) TimerEvent: {}
+[3.406718] (-) TimerEvent: {}
+[3.470977] (waypoint_navigation) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/pwm__functions.c.o\x1b[0m\n'}
+[3.471520] (waypoint_navigation) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/srv/detail/get_way_points__functions.c.o\x1b[0m\n'}
+[3.471625] (waypoint_navigation) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/action/detail/nav_to_waypoint__functions.c.o\x1b[0m\n'}
+[3.471997] (waypoint_navigation) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/estimated_twist__functions.c.o\x1b[0m\n'}
+[3.472116] (waypoint_navigation) StdoutLine: {'line': b'[ 10%] Built target waypoint_navigation__cpp\n'}
+[3.473651] (waypoint_navigation) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/estimated_odom__functions.c.o\x1b[0m\n'}
+[3.488766] (waypoint_navigation) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.489346] (waypoint_navigation) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.492642] (waypoint_navigation) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.506820] (-) TimerEvent: {}
+[3.612225] (-) TimerEvent: {}
+[3.658841] (waypoint_navigation) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libwaypoint_navigation__rosidl_generator_c.so\x1b[0m\n'}
+[3.712337] (-) TimerEvent: {}
+[3.713433] (waypoint_navigation) StdoutLine: {'line': b'[ 18%] Built target waypoint_navigation__rosidl_generator_c\n'}
+[3.728550] (waypoint_navigation) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.728802] (waypoint_navigation) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.728933] (waypoint_navigation) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.812475] (-) TimerEvent: {}
+[3.913045] (-) TimerEvent: {}
+[3.974682] (waypoint_navigation) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/srv/get_way_points__type_support.cpp.o\x1b[0m\n'}
+[3.976478] (waypoint_navigation) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/pwm__type_support.cpp.o\x1b[0m\n'}
+[3.977183] (waypoint_navigation) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/action/nav_to_waypoint__type_support.cpp.o\x1b[0m\n'}
+[4.013274] (-) TimerEvent: {}
+[4.116688] (-) TimerEvent: {}
+[4.220210] (-) TimerEvent: {}
+[4.320623] (-) TimerEvent: {}
+[4.321608] (waypoint_navigation) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/srv/detail/get_way_points__type_support.cpp.o\x1b[0m\n'}
+[4.420764] (-) TimerEvent: {}
+[4.444894] (waypoint_navigation) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/srv/detail/dds_fastrtps/get_way_points__type_support.cpp.o\x1b[0m\n'}
+[4.449338] (waypoint_navigation) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/srv/get_way_points__type_support.cpp.o\x1b[0m\n'}
+[4.476584] (waypoint_navigation) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/estimated_twist__type_support.cpp.o\x1b[0m\n'}
+[4.507857] (waypoint_navigation) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/action/nav_to_waypoint__type_support.cpp.o\x1b[0m\n'}
+[4.520906] (-) TimerEvent: {}
+[4.548467] (waypoint_navigation) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/pwm__type_support.cpp.o\x1b[0m\n'}
+[4.607274] (waypoint_navigation) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/action/detail/nav_to_waypoint__type_support.cpp.o\x1b[0m\n'}
+[4.613124] (waypoint_navigation) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/estimated_twist__type_support.cpp.o\x1b[0m\n'}
+[4.621052] (-) TimerEvent: {}
+[4.634236] (waypoint_navigation) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/srv/detail/get_way_points__type_support.c.o\x1b[0m\n'}
+[4.685581] (waypoint_navigation) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/estimated_odom__type_support.cpp.o\x1b[0m\n'}
+[4.721198] (-) TimerEvent: {}
+[4.731717] (waypoint_navigation) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/action/detail/nav_to_waypoint__type_support.c.o\x1b[0m\n'}
+[4.743617] (waypoint_navigation) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.789863] (waypoint_navigation) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/srv/detail/get_way_points__type_support_c.cpp.o\x1b[0m\n'}
+[4.823523] (-) TimerEvent: {}
+[4.842550] (waypoint_navigation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/action/detail/nav_to_waypoint__type_support_c.cpp.o\x1b[0m\n'}
+[4.847122] (waypoint_navigation) StdoutLine: {'line': b'[ 50%] Built target waypoint_navigation__rosidl_typesupport_c\n'}
+[4.853851] (waypoint_navigation) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/pwm__type_support.c.o\x1b[0m\n'}
+[4.868982] (waypoint_navigation) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/pwm__type_support_c.cpp.o\x1b[0m\n'}
+[4.901710] (waypoint_navigation) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/estimated_odom__type_support.cpp.o\x1b[0m\n'}
+[4.923232] (waypoint_navigation) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/estimated_twist__type_support.c.o\x1b[0m\n'}
+[4.923557] (-) TimerEvent: {}
+[5.026759] (waypoint_navigation) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/estimated_odom__type_support.c.o\x1b[0m\n'}
+[5.027079] (-) TimerEvent: {}
+[5.080037] (waypoint_navigation) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/pwm__type_support.cpp.o\x1b[0m\n'}
+[5.127238] (-) TimerEvent: {}
+[5.159514] (waypoint_navigation) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libwaypoint_navigation__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.227386] (-) TimerEvent: {}
+[5.241604] (waypoint_navigation) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/action/detail/dds_fastrtps/nav_to_waypoint__type_support.cpp.o\x1b[0m\n'}
+[5.276395] (waypoint_navigation) StdoutLine: {'line': b'[ 62%] Built target waypoint_navigation__rosidl_typesupport_introspection_c\n'}
+[5.295043] (waypoint_navigation) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/estimated_twist__type_support.cpp.o\x1b[0m\n'}
+[5.327510] (-) TimerEvent: {}
+[5.386783] (waypoint_navigation) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.427650] (-) TimerEvent: {}
+[5.433594] (waypoint_navigation) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/estimated_odom__type_support.cpp.o\x1b[0m\n'}
+[5.478450] (waypoint_navigation) StdoutLine: {'line': b'[ 67%] Built target waypoint_navigation__rosidl_typesupport_cpp\n'}
+[5.495992] (waypoint_navigation) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/pwm__type_support.cpp.o\x1b[0m\n'}
+[5.527786] (-) TimerEvent: {}
+[5.534432] (waypoint_navigation) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/estimated_twist__type_support.cpp.o\x1b[0m\n'}
+[5.540335] (waypoint_navigation) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/estimated_twist__type_support_c.cpp.o\x1b[0m\n'}
+[5.627924] (-) TimerEvent: {}
+[5.728439] (-) TimerEvent: {}
+[5.797974] (waypoint_navigation) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/estimated_odom__type_support.cpp.o\x1b[0m\n'}
+[5.828516] (-) TimerEvent: {}
+[5.881841] (waypoint_navigation) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/estimated_odom__type_support_c.cpp.o\x1b[0m\n'}
+[5.928662] (-) TimerEvent: {}
+[6.029274] (-) TimerEvent: {}
+[6.124271] (waypoint_navigation) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.129454] (-) TimerEvent: {}
+[6.229936] (-) TimerEvent: {}
+[6.263793] (waypoint_navigation) StdoutLine: {'line': b'[ 76%] Built target waypoint_navigation__rosidl_typesupport_introspection_cpp\n'}
+[6.330083] (-) TimerEvent: {}
+[6.353496] (waypoint_navigation) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.377328] (waypoint_navigation) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.430238] (-) TimerEvent: {}
+[6.490340] (waypoint_navigation) StdoutLine: {'line': b'[ 79%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_c\n'}
+[6.512941] (waypoint_navigation) StdoutLine: {'line': b'[ 79%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_cpp\n'}
+[6.530376] (-) TimerEvent: {}
+[6.539881] (waypoint_navigation) StdoutLine: {'line': b'[ 79%] Built target waypoint_navigation\n'}
+[6.566556] (waypoint_navigation) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.630484] (-) TimerEvent: {}
+[6.730795] (-) TimerEvent: {}
+[6.831109] (-) TimerEvent: {}
+[6.931454] (-) TimerEvent: {}
+[7.031785] (-) TimerEvent: {}
+[7.132124] (-) TimerEvent: {}
+[7.232472] (-) TimerEvent: {}
+[7.332778] (-) TimerEvent: {}
+[7.433105] (-) TimerEvent: {}
+[7.519828] (waypoint_navigation) StdoutLine: {'line': b'[ 81%] Built target waypoint_navigation__py\n'}
+[7.533253] (-) TimerEvent: {}
+[7.547614] (waypoint_navigation) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_estimated_twist_s.c.o\x1b[0m\n'}
+[7.547913] (waypoint_navigation) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_pwm_s.c.o\x1b[0m\n'}
+[7.548063] (waypoint_navigation) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/srv/_get_way_points_s.c.o\x1b[0m\n'}
+[7.548133] (waypoint_navigation) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_estimated_odom_s.c.o\x1b[0m\n'}
+[7.548195] (waypoint_navigation) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/action/_nav_to_waypoint_s.c.o\x1b[0m\n'}
+[7.633388] (-) TimerEvent: {}
+[7.726998] (waypoint_navigation) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/waypoint_navigation/libwaypoint_navigation__rosidl_generator_py.so\x1b[0m\n'}
+[7.733523] (-) TimerEvent: {}
+[7.783597] (waypoint_navigation) StdoutLine: {'line': b'[ 90%] Built target waypoint_navigation__rosidl_generator_py\n'}
+[7.808701] (waypoint_navigation) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.808957] (waypoint_navigation) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.809026] (waypoint_navigation) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.833639] (-) TimerEvent: {}
+[7.934049] (-) TimerEvent: {}
+[7.961215] (waypoint_navigation) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.961563] (waypoint_navigation) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.961651] (waypoint_navigation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.022769] (waypoint_navigation) StdoutLine: {'line': b'[100%] Built target waypoint_navigation__rosidl_typesupport_c__pyext\n'}
+[8.023122] (waypoint_navigation) StdoutLine: {'line': b'[100%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.023261] (waypoint_navigation) StdoutLine: {'line': b'[100%] Built target waypoint_navigation__rosidl_typesupport_introspection_c__pyext\n'}
+[8.034199] (-) TimerEvent: {}
+[8.040244] (waypoint_navigation) CommandEnded: {'returncode': 0}
+[8.041079] (waypoint_navigation) JobProgress: {'identifier': 'waypoint_navigation', 'progress': 'install'}
+[8.053048] (waypoint_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/monith/test_rover/build/waypoint_navigation'], 'cwd': '/home/monith/test_rover/build/waypoint_navigation', 'env': OrderedDict([('PYTHONWARNINGS', 'ignore:pkg_resources is deprecated,ignore:2.22.1ubuntu1'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'monith'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/monith/test_rover/install/waypoint_navigation/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/monith'), ('OLDPWD', '/home/monith'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11346'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1423'), ('SYSTEMD_EXEC_PID', '1591'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '9517'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/monith/test_rover/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'monith'), ('JOURNAL_STREAM', '8:16435'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'monith'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/monith/.gazebo/models:/usr/share/gazebo-11/models:/opt/ros/humble/share:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/monith/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/obsession:@/tmp/.ICE-unix/1567,unix/obsession:/tmp/.ICE-unix/1567'), ('INVOCATION_ID', '7af63f03e2f144159cb8b7bb68d755a0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q6KKN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ce3b74f-a481-44af-a38e-a5d820515d8e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/monith/test_rover/build/waypoint_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages:/home/monith/test_rover/build/rover_control:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/monith/test_rover/install/waypoint_navigation:/home/monith/test_rover/install/rover_control:/opt/ros/humble')]), 'shell': False}
+[8.062934] (waypoint_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.063600] (waypoint_navigation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.064014] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/rosidl_interfaces/waypoint_navigation\n'}
+[8.077290] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__functions.h\n'}
+[8.088308] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__struct.h\n'}
+[8.100158] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__type_support.h\n'}
+[8.111466] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/nav_to_waypoint.h\n'}
+[8.123076] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__functions.h\n'}
+[8.133602] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__struct.h\n'}
+[8.134268] (-) TimerEvent: {}
+[8.145069] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__type_support.h\n'}
+[8.155868] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__functions.h\n'}
+[8.166929] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__struct.h\n'}
+[8.178124] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__type_support.h\n'}
+[8.189023] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__functions.h\n'}
+[8.200213] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__struct.h\n'}
+[8.211423] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__type_support.h\n'}
+[8.222631] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_odom.h\n'}
+[8.233719] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_twist.h\n'}
+[8.234375] (-) TimerEvent: {}
+[8.244882] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/pwm.h\n'}
+[8.256640] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.267763] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__functions.h\n'}
+[8.280284] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__struct.h\n'}
+[8.291204] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__type_support.h\n'}
+[8.302153] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/get_way_points.h\n'}
+[8.314397] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/library_path.sh\n'}
+[8.326701] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/library_path.dsv\n'}
+[8.334611] (-) TimerEvent: {}
+[8.338128] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_fastrtps_c.h\n'}
+[8.349543] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_fastrtps_c.h\n'}
+[8.360902] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_fastrtps_c.h\n'}
+[8.373434] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_fastrtps_c.h\n'}
+[8.383985] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.395522] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_fastrtps_c.h\n'}
+[8.408419] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__builder.hpp\n'}
+[8.420041] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__struct.hpp\n'}
+[8.431238] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__traits.hpp\n'}
+[8.434732] (-) TimerEvent: {}
+[8.442602] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__type_support.hpp\n'}
+[8.454256] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/nav_to_waypoint.hpp\n'}
+[8.465794] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__builder.hpp\n'}
+[8.476645] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__struct.hpp\n'}
+[8.488183] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__traits.hpp\n'}
+[8.499707] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__type_support.hpp\n'}
+[8.510576] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__builder.hpp\n'}
+[8.523399] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__struct.hpp\n'}
+[8.534863] (-) TimerEvent: {}
+[8.536117] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__traits.hpp\n'}
+[8.547467] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__type_support.hpp\n'}
+[8.558098] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__builder.hpp\n'}
+[8.569734] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__struct.hpp\n'}
+[8.581476] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__traits.hpp\n'}
+[8.593101] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__type_support.hpp\n'}
+[8.605318] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_odom.hpp\n'}
+[8.617789] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_twist.hpp\n'}
+[8.629263] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/pwm.hpp\n'}
+[8.635009] (-) TimerEvent: {}
+[8.641025] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.652077] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__builder.hpp\n'}
+[8.663633] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__struct.hpp\n'}
+[8.675366] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__traits.hpp\n'}
+[8.687111] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__type_support.hpp\n'}
+[8.699041] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/get_way_points.hpp\n'}
+[8.712053] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.724180] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.735162] (-) TimerEvent: {}
+[8.735760] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.747618] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.758757] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.770197] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.782205] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_introspection_c.h\n'}
+[8.794905] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_introspection_c.h\n'}
+[8.806507] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_introspection_c.h\n'}
+[8.819023] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_introspection_c.h\n'}
+[8.831094] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.835303] (-) TimerEvent: {}
+[8.842721] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_introspection_c.h\n'}
+[8.855205] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.867788] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.878961] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.891089] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.902592] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.913427] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/pythonpath.sh\n'}
+[8.925167] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/pythonpath.dsv\n'}
+[8.935465] (-) TimerEvent: {}
+[8.937523] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.948396] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.960078] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.972054] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.984375] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/__init__.py\n'}
+[8.995552] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_c.c\n'}
+[9.006374] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.018100] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.029465] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/__init__.py\n'}
+[9.035612] (-) TimerEvent: {}
+[9.040649] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint.py\n'}
+[9.051557] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint_s.c\n'}
+[9.063220] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/libwaypoint_navigation__rosidl_generator_py.so\n'}
+[9.076012] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/__init__.py\n'}
+[9.087258] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom.py\n'}
+[9.098172] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom_s.c\n'}
+[9.110487] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist.py\n'}
+[9.124470] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist_s.c\n'}
+[9.135733] (-) TimerEvent: {}
+[9.136718] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm.py\n'}
+[9.148254] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm_s.c\n'}
+[9.159907] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/__init__.py\n'}
+[9.171158] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points.py\n'}
+[9.182336] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points_s.c\n'}
+[9.193497] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.204790] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.216038] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.227768] (waypoint_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.228032] (waypoint_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.228345] (waypoint_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.228718] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/rust_packages/waypoint_navigation\n'}
+[9.235867] (-) TimerEvent: {}
+[9.241243] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/Cargo.toml\n'}
+[9.252679] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/build.rs\n'}
+[9.264133] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/action.rs\n'}
+[9.277849] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/action/rmw.rs\n'}
+[9.288867] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/lib.rs\n'}
+[9.300578] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/msg.rs\n'}
+[9.311596] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/msg/rmw.rs\n'}
+[9.323468] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/srv.rs\n'}
+[9.335227] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/srv/rmw.rs\n'}
+[9.335961] (-) TimerEvent: {}
+[9.346507] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints.idl\n'}
+[9.358509] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/action/NavToWaypoint.idl\n'}
+[9.373826] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/Pwm.idl\n'}
+[9.386890] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedTwist.idl\n'}
+[9.397819] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedOdom.idl\n'}
+[9.409515] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints.srv\n'}
+[9.421093] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints_Request.msg\n'}
+[9.432360] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints_Response.msg\n'}
+[9.436091] (-) TimerEvent: {}
+[9.444378] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/action/NavToWaypoint.action\n'}
+[9.455350] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/Pwm.msg\n'}
+[9.466748] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedTwist.msg\n'}
+[9.478013] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedOdom.msg\n'}
+[9.489709] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/package_run_dependencies/waypoint_navigation\n'}
+[9.501339] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/parent_prefix_path/waypoint_navigation\n'}
+[9.513019] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/ament_prefix_path.sh\n'}
+[9.524901] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/ament_prefix_path.dsv\n'}
+[9.535898] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/path.sh\n'}
+[9.536085] (-) TimerEvent: {}
+[9.546799] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/path.dsv\n'}
+[9.557753] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.bash\n'}
+[9.569207] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.sh\n'}
+[9.579865] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.zsh\n'}
+[9.591705] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.dsv\n'}
+[9.603298] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/package.dsv\n'}
+[9.615585] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/packages/waypoint_navigation\n'}
+[9.626490] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake-extras.cmake\n'}
+[9.636237] (-) TimerEvent: {}
+[9.640926] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.651860] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.663126] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.674832] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.686502] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.697082] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.709243] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigationConfig.cmake\n'}
+[9.720268] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigationConfig-version.cmake\n'}
+[9.731491] (waypoint_navigation) StdoutLine: {'line': b'-- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/package.xml\n'}
+[9.736360] (-) TimerEvent: {}
+[9.743344] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_c.so\n'}
+[9.744109] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_c.so" to ""\n'}
+[9.744285] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so\n'}
+[9.744782] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.744976] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.745468] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.745589] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_c.so\n'}
+[9.746108] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.746225] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_c.so\n'}
+[9.746704] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_c.so" to ""\n'}
+[9.746853] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so\n'}
+[9.747502] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.747660] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_cpp.so\n'}
+[9.748136] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_cpp.so" to ""\n'}
+[9.792482] (waypoint_navigation) StdoutLine: {'line': b"Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation'...\n"}
+[9.792771] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/__init__.py'...\n"}
+[9.792886] (waypoint_navigation) StdoutLine: {'line': b"Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action'...\n"}
+[9.792986] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/__init__.py'...\n"}
+[9.793084] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint.py'...\n"}
+[9.793186] (waypoint_navigation) StdoutLine: {'line': b"Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg'...\n"}
+[9.793299] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/__init__.py'...\n"}
+[9.793377] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom.py'...\n"}
+[9.793449] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist.py'...\n"}
+[9.793500] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm.py'...\n"}
+[9.793549] (waypoint_navigation) StdoutLine: {'line': b"Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv'...\n"}
+[9.793594] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/__init__.py'...\n"}
+[9.793639] (waypoint_navigation) StdoutLine: {'line': b"Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points.py'...\n"}
+[9.798724] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_py.so\n'}
+[9.800228] (waypoint_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_py.so" to ""\n'}
+[9.800737] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cExport.cmake\n'}
+[9.800928] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.801134] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.801297] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.801485] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cppExport.cmake\n'}
+[9.801637] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.801841] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.802000] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.802106] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.802311] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cExport.cmake\n'}
+[9.802552] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.802825] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.803022] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.803156] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cppExport.cmake\n'}
+[9.803331] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.803546] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_pyExport.cmake\n'}
+[9.803746] (waypoint_navigation) StdoutLine: {'line': b'-- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.807599] (waypoint_navigation) CommandEnded: {'returncode': 0}
+[9.824340] (waypoint_navigation) JobEnded: {'identifier': 'waypoint_navigation', 'rc': 0}
+[9.825077] (-) EventReactorShutdown: {}

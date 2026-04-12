@@ -1,0 +1,36 @@
+running develop
+running egg_info
+creating rover_control.egg-info
+writing rover_control.egg-info/PKG-INFO
+writing dependency_links to rover_control.egg-info/dependency_links.txt
+writing entry points to rover_control.egg-info/entry_points.txt
+writing requirements to rover_control.egg-info/requires.txt
+writing top-level names to rover_control.egg-info/top_level.txt
+writing manifest file 'rover_control.egg-info/SOURCES.txt'
+reading manifest file 'rover_control.egg-info/SOURCES.txt'
+writing manifest file 'rover_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+
+Installed /home/monith/test_rover/build/rover_control
+running symlink_data
+creating /home/monith/test_rover/install/rover_control/share/ament_index
+creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index
+creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages
+symbolically linking /home/monith/test_rover/build/rover_control/resource/rover_control -> /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages
+symbolically linking /home/monith/test_rover/build/rover_control/package.xml -> /home/monith/test_rover/install/rover_control/share/rover_control
+creating /home/monith/test_rover/install/rover_control/share/rover_control/launch
+symbolically linking /home/monith/test_rover/build/rover_control/launch/sim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+creating /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+symbolically linking /home/monith/test_rover/build/rover_control/urdf/ROVER.urdf -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+symbolically linking /home/monith/test_rover/build/rover_control/urdf/roverf.urdf -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover_base.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+creating /home/monith/test_rover/install/rover_control/share/rover_control/worlds
+symbolically linking /home/monith/test_rover/build/rover_control/worlds/shaastra_arena.world -> /home/monith/test_rover/install/rover_control/share/rover_control/worlds
+creating /home/monith/test_rover/install/rover_control/share/rover_control/config
+symbolically linking /home/monith/test_rover/build/rover_control/config/controllers.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+symbolically linking /home/monith/test_rover/build/rover_control/config/controllert.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+creating /home/monith/test_rover/install/rover_control/share/rover_control/rviz
+symbolically linking /home/monith/test_rover/build/rover_control/rviz/rover_config.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz

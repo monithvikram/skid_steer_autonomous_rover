@@ -1,0 +1,47 @@
+[0.640s] Invoking command in '/home/monith/test_rover/build/rover_control': PYTHONPATH=/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/monith/test_rover/build/rover_control/build --no-deps symlink_data
+[0.878s] running develop
+[1.005s] running egg_info
+[1.006s] creating rover_control.egg-info
+[1.006s] writing rover_control.egg-info/PKG-INFO
+[1.006s] writing dependency_links to rover_control.egg-info/dependency_links.txt
+[1.006s] writing entry points to rover_control.egg-info/entry_points.txt
+[1.006s] writing requirements to rover_control.egg-info/requires.txt
+[1.007s] writing top-level names to rover_control.egg-info/top_level.txt
+[1.007s] writing manifest file 'rover_control.egg-info/SOURCES.txt'
+[1.009s] reading manifest file 'rover_control.egg-info/SOURCES.txt'
+[1.010s] writing manifest file 'rover_control.egg-info/SOURCES.txt'
+[1.011s] running build_ext
+[1.012s] Creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+[1.013s] Installing nav_node script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.013s] Installing pwm_decoder script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.013s] Installing pwm_translator script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.013s] Installing waypoint_client script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.013s] Installing waypoint_server script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.013s] 
+[1.014s] Installed /home/monith/test_rover/build/rover_control
+[1.014s] running symlink_data
+[1.014s] creating /home/monith/test_rover/install/rover_control/share/ament_index
+[1.014s] creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index
+[1.014s] creating /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages
+[1.014s] symbolically linking /home/monith/test_rover/build/rover_control/resource/rover_control -> /home/monith/test_rover/install/rover_control/share/ament_index/resource_index/packages
+[1.014s] symbolically linking /home/monith/test_rover/build/rover_control/package.xml -> /home/monith/test_rover/install/rover_control/share/rover_control
+[1.014s] creating /home/monith/test_rover/install/rover_control/share/rover_control/launch
+[1.014s] symbolically linking /home/monith/test_rover/build/rover_control/launch/roversim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+[1.014s] symbolically linking /home/monith/test_rover/build/rover_control/launch/robotsim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+[1.014s] symbolically linking /home/monith/test_rover/build/rover_control/launch/arenasim.launch.xml -> /home/monith/test_rover/install/rover_control/share/rover_control/launch
+[1.014s] creating /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.015s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.015s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover_base.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.015s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.015s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot.urdf.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.015s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/rover.ros2_control.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.016s] symbolically linking /home/monith/test_rover/build/rover_control/urdf/robot_core_lr.xacro -> /home/monith/test_rover/install/rover_control/share/rover_control/urdf
+[1.016s] creating /home/monith/test_rover/install/rover_control/share/rover_control/worlds
+[1.016s] symbolically linking /home/monith/test_rover/build/rover_control/worlds/shaastra_arena.world -> /home/monith/test_rover/install/rover_control/share/rover_control/worlds
+[1.016s] creating /home/monith/test_rover/install/rover_control/share/rover_control/config
+[1.016s] symbolically linking /home/monith/test_rover/build/rover_control/config/controllert.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+[1.016s] symbolically linking /home/monith/test_rover/build/rover_control/config/robot_controller.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+[1.016s] symbolically linking /home/monith/test_rover/build/rover_control/config/controllers.yaml -> /home/monith/test_rover/install/rover_control/share/rover_control/config
+[1.016s] creating /home/monith/test_rover/install/rover_control/share/rover_control/rviz
+[1.017s] symbolically linking /home/monith/test_rover/build/rover_control/rviz/rover_config_.rviz -> /home/monith/test_rover/install/rover_control/share/rover_control/rviz
+[1.064s] Invoked command in '/home/monith/test_rover/build/rover_control' returned '0': PYTHONPATH=/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/monith/test_rover/build/rover_control/build --no-deps symlink_data

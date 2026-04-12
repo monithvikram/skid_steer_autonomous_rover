@@ -1,0 +1,20 @@
+[1.081s] Invoking command in '/home/monith/test_rover/build/rover_control': PYTHONPATH=/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/monith/test_rover/build/rover_control/build --no-deps symlink_data
+[1.417s] running develop
+[1.576s] running egg_info
+[1.576s] writing rover_control.egg-info/PKG-INFO
+[1.576s] writing dependency_links to rover_control.egg-info/dependency_links.txt
+[1.577s] writing entry points to rover_control.egg-info/entry_points.txt
+[1.577s] writing requirements to rover_control.egg-info/requires.txt
+[1.577s] writing top-level names to rover_control.egg-info/top_level.txt
+[1.580s] reading manifest file 'rover_control.egg-info/SOURCES.txt'
+[1.581s] writing manifest file 'rover_control.egg-info/SOURCES.txt'
+[1.583s] running build_ext
+[1.584s] Creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+[1.585s] Installing nav_node script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.585s] Installing pwm_decoder script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.585s] Installing pwm_translator script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.585s] Installing waypoint_client script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.585s] Installing waypoint_server script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[1.586s] 
+[1.586s] Installed /home/monith/test_rover/build/rover_control
+[1.586s] running symlink_data

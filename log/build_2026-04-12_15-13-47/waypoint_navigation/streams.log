@@ -1,0 +1,332 @@
+[0.203s] Invoking command in '/home/monith/test_rover/build/waypoint_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake /home/monith/test_rover/src/waypoint_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/monith/test_rover/install/waypoint_navigation
+[0.296s] -- The C compiler identification is GNU 11.4.0
+[0.376s] -- The CXX compiler identification is GNU 11.4.0
+[0.386s] -- Detecting C compiler ABI info
+[0.439s] -- Detecting C compiler ABI info - done
+[0.445s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.446s] -- Detecting C compile features
+[0.446s] -- Detecting C compile features - done
+[0.449s] -- Detecting CXX compiler ABI info
+[0.503s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.509s] -- Detecting CXX compile features
+[0.510s] -- Detecting CXX compile features - done
+[0.512s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.628s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.679s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.703s] -- Found rcl_interfaces: 1.2.2 (/opt/ros/humble/share/rcl_interfaces/cmake)
+[0.735s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.739s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.748s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.774s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.798s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.812s] -- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)
+[0.839s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.854s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.870s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.147s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.660s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.679s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.680s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.702s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.702s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.702s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.702s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.719s] -- Found PythonExtra: .so  
+[1.857s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.877s] -- Added test 'lint_cmake' to check CMake code style
+[1.878s] -- Added test 'xmllint' to check XML markup files
+[1.881s] -- Configuring done
+[1.916s] -- Generating done
+[1.927s] -- Build files have been written to: /home/monith/test_rover/build/waypoint_navigation
+[1.935s] Invoked command in '/home/monith/test_rover/build/waypoint_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake /home/monith/test_rover/src/waypoint_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/monith/test_rover/install/waypoint_navigation
+[1.935s] Invoking command in '/home/monith/test_rover/build/waypoint_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake --build /home/monith/test_rover/build/waypoint_navigation -- -j8 -l8
+[1.960s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.967s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.967s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.972s] [  4%] Built target ament_cmake_python_symlink_waypoint_navigation
+[2.160s] running egg_info
+[2.160s] creating waypoint_navigation.egg-info
+[2.160s] writing waypoint_navigation.egg-info/PKG-INFO
+[2.160s] writing dependency_links to waypoint_navigation.egg-info/dependency_links.txt
+[2.160s] writing top-level names to waypoint_navigation.egg-info/top_level.txt
+[2.160s] writing manifest file 'waypoint_navigation.egg-info/SOURCES.txt'
+[2.162s] reading manifest file 'waypoint_navigation.egg-info/SOURCES.txt'
+[2.162s] writing manifest file 'waypoint_navigation.egg-info/SOURCES.txt'
+[2.181s] [  4%] Built target ament_cmake_python_build_waypoint_navigation_egg
+[2.249s] [  4%] Built target waypoint_navigation__rs
+[2.492s] [  4%] Built target waypoint_navigation__cpp
+[2.494s] [  7%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/pwm__functions.c.o[0m
+[2.494s] [  9%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/srv/detail/get_way_points__functions.c.o[0m
+[2.494s] [ 10%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/estimated_twist__functions.c.o[0m
+[2.495s] [ 10%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/action/detail/nav_to_waypoint__functions.c.o[0m
+[2.495s] [ 12%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation/msg/detail/estimated_odom__functions.c.o[0m
+[2.500s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.500s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.500s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.612s] [ 18%] [32m[1mLinking C shared library libwaypoint_navigation__rosidl_generator_c.so[0m
+[2.639s] [ 18%] Built target waypoint_navigation__rosidl_generator_c
+[2.646s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.646s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.646s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.813s] [ 26%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/pwm__type_support.cpp.o[0m
+[2.813s] [ 28%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/srv/get_way_points__type_support.cpp.o[0m
+[2.813s] [ 28%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/action/nav_to_waypoint__type_support.cpp.o[0m
+[2.958s] [ 29%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/srv/detail/get_way_points__type_support.cpp.o[0m
+[2.960s] [ 31%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/srv/get_way_points__type_support.cpp.o[0m
+[2.986s] [ 32%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/action/nav_to_waypoint__type_support.cpp.o[0m
+[3.002s] [ 34%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/srv/detail/dds_fastrtps/get_way_points__type_support.cpp.o[0m
+[3.025s] [ 35%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/pwm__type_support.cpp.o[0m
+[3.049s] [ 39%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/estimated_twist__type_support.cpp.o[0m
+[3.049s] [ 39%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/estimated_twist__type_support.cpp.o[0m
+[3.062s] [ 40%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/action/detail/nav_to_waypoint__type_support.cpp.o[0m
+[3.072s] [ 42%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation/msg/estimated_odom__type_support.cpp.o[0m
+[3.100s] [ 43%] [32m[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_c.so[0m
+[3.124s] [ 45%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/srv/detail/get_way_points__type_support.c.o[0m
+[3.135s] [ 46%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/srv/detail/get_way_points__type_support_c.cpp.o[0m
+[3.137s] [ 46%] Built target waypoint_navigation__rosidl_typesupport_c
+[3.142s] [ 48%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/action/detail/nav_to_waypoint__type_support.c.o[0m
+[3.153s] [ 50%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/pwm__type_support.cpp.o[0m
+[3.182s] [ 51%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/pwm__type_support.c.o[0m
+[3.209s] [ 53%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/estimated_twist__type_support.c.o[0m
+[3.234s] [ 56%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/action/detail/nav_to_waypoint__type_support_c.cpp.o[0m
+[3.234s] [ 56%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation/msg/detail/estimated_odom__type_support.c.o[0m
+[3.261s] [ 57%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation/msg/estimated_odom__type_support.cpp.o[0m
+[3.263s] [ 59%] [32m[1mLinking C shared library libwaypoint_navigation__rosidl_typesupport_introspection_c.so[0m
+[3.287s] [ 60%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/action/detail/dds_fastrtps/nav_to_waypoint__type_support.cpp.o[0m
+[3.293s] [ 60%] Built target waypoint_navigation__rosidl_typesupport_introspection_c
+[3.300s] [ 62%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/pwm__type_support.cpp.o[0m
+[3.379s] [ 64%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/estimated_twist__type_support.cpp.o[0m
+[3.433s] [ 65%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation/msg/detail/estimated_odom__type_support.cpp.o[0m
+[3.453s] [ 67%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/estimated_twist__type_support.cpp.o[0m
+[3.539s] [ 68%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation/msg/detail/dds_fastrtps/estimated_odom__type_support.cpp.o[0m
+[3.545s] [ 70%] [32m[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_cpp.so[0m
+[3.582s] [ 70%] Built target waypoint_navigation__rosidl_typesupport_cpp
+[3.589s] [ 71%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/pwm__type_support_c.cpp.o[0m
+[3.597s] [ 73%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/estimated_twist__type_support_c.cpp.o[0m
+[3.631s] [ 75%] [32mBuilding CXX object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation/msg/detail/estimated_odom__type_support_c.cpp.o[0m
+[3.761s] [ 76%] [32m[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so[0m
+[3.828s] [ 76%] Built target waypoint_navigation__rosidl_typesupport_introspection_cpp
+[3.848s] [ 78%] [32m[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.892s] [ 79%] [32m[1mLinking CXX shared library libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so[0m
+[3.904s] [ 79%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_cpp
+[3.945s] [ 79%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_c
+[3.957s] [ 79%] Built target waypoint_navigation
+[3.971s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.847s] [ 81%] Built target waypoint_navigation__py
+[4.861s] [ 85%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/action/_nav_to_waypoint_s.c.o[0m
+[4.861s] [ 85%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_pwm_s.c.o[0m
+[4.861s] [ 85%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/srv/_get_way_points_s.c.o[0m
+[4.861s] [ 89%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_estimated_twist_s.c.o[0m
+[4.861s] [ 89%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation/msg/_estimated_odom_s.c.o[0m
+[4.985s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/waypoint_navigation/libwaypoint_navigation__rosidl_generator_py.so[0m
+[5.015s] [ 90%] Built target waypoint_navigation__rosidl_generator_py
+[5.028s] [ 95%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.028s] [ 95%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.029s] [ 95%] [32mBuilding C object CMakeFiles/waypoint_navigation__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_c.c.o[0m
+[5.131s] [100%] [32m[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.131s] [100%] [32m[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.131s] [100%] [32m[1mLinking C shared library rosidl_generator_py/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.166s] [100%] Built target waypoint_navigation__rosidl_typesupport_introspection_c__pyext
+[5.166s] [100%] Built target waypoint_navigation__rosidl_typesupport_fastrtps_c__pyext
+[5.167s] [100%] Built target waypoint_navigation__rosidl_typesupport_c__pyext
+[5.175s] Invoked command in '/home/monith/test_rover/build/waypoint_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake --build /home/monith/test_rover/build/waypoint_navigation -- -j8 -l8
+[5.182s] Invoking command in '/home/monith/test_rover/build/waypoint_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake --install /home/monith/test_rover/build/waypoint_navigation
+[5.187s] -- Install configuration: ""
+[5.187s] -- Execute custom install script
+[5.187s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/rosidl_interfaces/waypoint_navigation
+[5.193s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__functions.h
+[5.199s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__struct.h
+[5.204s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__type_support.h
+[5.210s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/nav_to_waypoint.h
+[5.215s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__functions.h
+[5.221s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__struct.h
+[5.226s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__type_support.h
+[5.232s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__functions.h
+[5.238s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__struct.h
+[5.243s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__type_support.h
+[5.249s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__functions.h
+[5.254s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__struct.h
+[5.260s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__type_support.h
+[5.265s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_odom.h
+[5.271s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_twist.h
+[5.277s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/pwm.h
+[5.282s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_generator_c__visibility_control.h
+[5.288s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__functions.h
+[5.294s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__struct.h
+[5.299s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__type_support.h
+[5.305s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/get_way_points.h
+[5.311s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/library_path.sh
+[5.316s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/library_path.dsv
+[5.322s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_fastrtps_c.h
+[5.327s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_fastrtps_c.h
+[5.333s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_fastrtps_c.h
+[5.338s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_fastrtps_c.h
+[5.344s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.349s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_fastrtps_c.h
+[5.355s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__builder.hpp
+[5.361s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__struct.hpp
+[5.367s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__traits.hpp
+[5.372s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__type_support.hpp
+[5.378s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/nav_to_waypoint.hpp
+[5.383s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__builder.hpp
+[5.389s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__struct.hpp
+[5.394s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__traits.hpp
+[5.400s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__type_support.hpp
+[5.406s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__builder.hpp
+[5.412s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__struct.hpp
+[5.418s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__traits.hpp
+[5.423s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__type_support.hpp
+[5.429s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__builder.hpp
+[5.435s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__struct.hpp
+[5.440s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__traits.hpp
+[5.445s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__type_support.hpp
+[5.451s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_odom.hpp
+[5.457s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/estimated_twist.hpp
+[5.462s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/pwm.hpp
+[5.468s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.473s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__builder.hpp
+[5.479s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__struct.hpp
+[5.484s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__traits.hpp
+[5.490s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__type_support.hpp
+[5.495s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/get_way_points.hpp
+[5.501s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_fastrtps_cpp.hpp
+[5.507s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_fastrtps_cpp.hpp
+[5.512s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_fastrtps_cpp.hpp
+[5.518s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_fastrtps_cpp.hpp
+[5.523s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.529s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_fastrtps_cpp.hpp
+[5.534s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_introspection_c.h
+[5.540s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_introspection_c.h
+[5.545s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_introspection_c.h
+[5.551s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_introspection_c.h
+[5.556s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.562s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_introspection_c.h
+[5.567s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/action/detail/nav_to_waypoint__rosidl_typesupport_introspection_cpp.hpp
+[5.573s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_odom__rosidl_typesupport_introspection_cpp.hpp
+[5.578s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/estimated_twist__rosidl_typesupport_introspection_cpp.hpp
+[5.583s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/msg/detail/pwm__rosidl_typesupport_introspection_cpp.hpp
+[5.589s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/include/waypoint_navigation/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_introspection_cpp.hpp
+[5.594s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/pythonpath.sh
+[5.600s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/pythonpath.dsv
+[5.606s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/PKG-INFO
+[5.611s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.616s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.621s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation-0.0.0-py3.10.egg-info/top_level.txt
+[5.627s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/__init__.py
+[5.633s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_c.c
+[5.638s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.643s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/_waypoint_navigation_s.ep.rosidl_typesupport_introspection_c.c
+[5.649s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/__init__.py
+[5.654s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint.py
+[5.660s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint_s.c
+[5.665s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/libwaypoint_navigation__rosidl_generator_py.so
+[5.671s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/__init__.py
+[5.676s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom.py
+[5.681s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom_s.c
+[5.687s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist.py
+[5.692s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist_s.c
+[5.697s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm.py
+[5.703s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm_s.c
+[5.708s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/__init__.py
+[5.713s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points.py
+[5.719s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points_s.c
+[5.724s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.729s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.735s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.740s] -- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.740s] -- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.741s] -- Up-to-date symlink: /home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/waypoint_navigation_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.741s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/rust_packages/waypoint_navigation
+[5.746s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/Cargo.toml
+[5.751s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/build.rs
+[5.757s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/action.rs
+[5.762s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/action/rmw.rs
+[5.767s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/lib.rs
+[5.772s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/msg.rs
+[5.777s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/msg/rmw.rs
+[5.783s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/srv.rs
+[5.788s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/rust/src/srv/rmw.rs
+[5.794s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints.idl
+[5.799s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/action/NavToWaypoint.idl
+[5.805s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/Pwm.idl
+[5.811s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedTwist.idl
+[5.817s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedOdom.idl
+[5.823s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints.srv
+[5.828s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints_Request.msg
+[5.833s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/srv/GetWayPoints_Response.msg
+[5.839s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/action/NavToWaypoint.action
+[5.844s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/Pwm.msg
+[5.849s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedTwist.msg
+[5.854s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/msg/EstimatedOdom.msg
+[5.860s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/package_run_dependencies/waypoint_navigation
+[5.866s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/parent_prefix_path/waypoint_navigation
+[5.871s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/ament_prefix_path.sh
+[5.877s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/ament_prefix_path.dsv
+[5.882s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/path.sh
+[5.888s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/environment/path.dsv
+[5.894s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.bash
+[5.899s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.sh
+[5.905s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.zsh
+[5.911s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/local_setup.dsv
+[5.917s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/package.dsv
+[5.924s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/ament_index/resource_index/packages/waypoint_navigation
+[5.930s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake-extras.cmake
+[5.936s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.942s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.948s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_libraries-extras.cmake
+[5.954s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/ament_cmake_export_targets-extras.cmake
+[5.964s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.968s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.975s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigationConfig.cmake
+[5.981s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigationConfig-version.cmake
+[5.987s] -- Symlinking: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/package.xml
+[5.993s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_c.so
+[5.993s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_c.so" to ""
+[5.993s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so
+[5.993s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_c.so" to ""
+[5.993s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so
+[5.994s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.994s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_c.so
+[5.994s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_c.so" to ""
+[5.994s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_c.so
+[5.994s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_c.so" to ""
+[5.994s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so
+[5.994s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_introspection_cpp.so" to ""
+[5.994s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_cpp.so
+[5.995s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_typesupport_cpp.so" to ""
+[6.028s] Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/__init__.py'...
+[6.028s] Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/__init__.py'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/action/_nav_to_waypoint.py'...
+[6.028s] Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/__init__.py'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_odom.py'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_estimated_twist.py'...
+[6.028s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/msg/_pwm.py'...
+[6.028s] Listing '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv'...
+[6.029s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/__init__.py'...
+[6.029s] Compiling '/home/monith/test_rover/install/waypoint_navigation/local/lib/python3.10/dist-packages/waypoint_navigation/srv/_get_way_points.py'...
+[6.031s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_py.so
+[6.032s] -- Set runtime path of "/home/monith/test_rover/install/waypoint_navigation/lib/libwaypoint_navigation__rosidl_generator_py.so" to ""
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cExport.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cExport-noconfig.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cExport.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_cppExport.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cExport.cmake
+[6.032s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cExport.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cExport-noconfig.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cppExport.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cppExport.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/waypoint_navigation__rosidl_typesupport_cppExport-noconfig.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_pyExport.cmake
+[6.033s] -- Installing: /home/monith/test_rover/install/waypoint_navigation/share/waypoint_navigation/cmake/export_waypoint_navigation__rosidl_generator_pyExport-noconfig.cmake
+[6.035s] Invoked command in '/home/monith/test_rover/build/waypoint_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/monith/test_rover/install/rover_control:/opt/ros/humble /usr/bin/cmake --install /home/monith/test_rover/build/waypoint_navigation

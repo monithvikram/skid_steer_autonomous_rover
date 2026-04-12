@@ -1,0 +1,1 @@
+/home/monith/test_rover/build/waypoint_navigation/ament_cmake_core/waypoint_navigationConfig-version.cmake

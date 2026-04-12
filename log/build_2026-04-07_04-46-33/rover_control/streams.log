@@ -1,0 +1,21 @@
+[0.612s] Invoking command in '/home/monith/test_rover/build/rover_control': PYTHONPATH=/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/monith/test_rover/build/rover_control/build --no-deps symlink_data
+[0.840s] running develop
+[0.968s] running egg_info
+[0.968s] writing rover_control.egg-info/PKG-INFO
+[0.969s] writing dependency_links to rover_control.egg-info/dependency_links.txt
+[0.969s] writing entry points to rover_control.egg-info/entry_points.txt
+[0.969s] writing requirements to rover_control.egg-info/requires.txt
+[0.969s] writing top-level names to rover_control.egg-info/top_level.txt
+[0.971s] reading manifest file 'rover_control.egg-info/SOURCES.txt'
+[0.972s] writing manifest file 'rover_control.egg-info/SOURCES.txt'
+[0.974s] running build_ext
+[0.974s] Creating /home/monith/test_rover/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+[0.975s] Installing nav_node script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[0.975s] Installing pwm_decoder script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[0.975s] Installing pwm_translator script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[0.975s] Installing waypoint_client script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[0.975s] Installing waypoint_server script to /home/monith/test_rover/install/rover_control/lib/rover_control
+[0.975s] 
+[0.975s] Installed /home/monith/test_rover/build/rover_control
+[0.976s] running symlink_data
+[1.027s] Invoked command in '/home/monith/test_rover/build/rover_control' returned '0': PYTHONPATH=/home/monith/test_rover/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/monith/test_rover/install/rover_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/monith/test_rover/build/rover_control/build --no-deps symlink_data

@@ -1,0 +1,1 @@
+/home/monith/test_rover/build/waypoint_navigation/rosidl_typesupport_fastrtps_c/waypoint_navigation/srv/detail/get_way_points__rosidl_typesupport_fastrtps_c.h
