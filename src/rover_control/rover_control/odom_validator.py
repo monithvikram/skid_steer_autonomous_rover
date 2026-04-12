@@ -74,15 +74,8 @@ class OdomValidator(Node):
         odom.twist.covariance = self._diag_covariance(0.01)
         self.odom_pub.publish(odom)
 
-    # _integrate_exact and _diag_cov same as before
-
     def _integrate_exact(self, linear: float, angular: float):
-        """
-        Mirrors diff_drive_controller::Odometry::integrateExact().
-        Treats motion as a true circular arc — much lower error on curves
-        than Euler integration.
-        """
-        if abs(angular) < 1e-6:
+        if abs(angular) < 1e-3:
             # Near-straight: Runge-Kutta 2nd order (midpoint method)
             # mirrors integrateRungeKutta2()
             direction = self.heading + angular * 0.5
