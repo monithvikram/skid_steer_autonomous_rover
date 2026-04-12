@@ -27,8 +27,8 @@ class WayPointServer(Node):
         self.prev_distance = 0.0
         self.Kp_linear = 2.0
         self.Kd_linear = 0.2
-        self.Kp_angular = 2.0
-        self.Kd_angular = 0.2
+        self.Kp_angular = 3.0
+        self.Kd_angular = 0.3
         self.prev_angle_error = 0.0
 
         self.prev_time = time.time()
@@ -77,7 +77,7 @@ class WayPointServer(Node):
             dx = self.goal_x - self.x
             dy = self.goal_y - self.y
             distance = math.sqrt(dx**2 + dy**2)
-
+            distance_error = distance - self.prev_distance
             # Publish feedback
             feedback_msg.current_position = PoseStamped()
             feedback_msg.current_position.pose.position.x = self.x
@@ -95,15 +95,15 @@ class WayPointServer(Node):
 
             start_time = time.time()
             dt = start_time - self.prev_time
-            distance_error = (self.prev_distance - distance) / dt
-            d_angle_error = (self.prev_angle_error - angle_error) / dt
+
+            d_angle_error = (angle_error - self.prev_angle_error) / dt
             self.prev_angle_error = angle_error
 
             msg = TwistStamped()
             msg.header.stamp = self.get_clock().now().to_msg()
             msg.header.frame_id = "base_link"
             msg.twist.linear.x = min(
-                self.Kp_linear * distance + (self.Kd_linear * distance_error) / dt, 1.0) if abs(angle_error) < math.radians(10) else 0.0
+                self.Kp_linear * distance + (self.Kd_linear * distance_error) / dt, 1.0) if abs(angle_error) < math.radians(15) else 0.0
             msg.twist.angular.z = max(min(
                 self.Kp_angular * angle_error + self.Kd_angular * d_angle_error,
                 1.5), -1.5)

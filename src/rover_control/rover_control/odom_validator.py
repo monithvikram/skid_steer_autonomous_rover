@@ -74,7 +74,7 @@ class OdomValidator(Node):
         odom.twist.covariance = self._diag_covariance(0.01)
         self.odom_pub.publish(odom)
 
-    # _integrate_exact and _diag_co v same as before
+    # _integrate_exact and _diag_cov same as before
 
     def _integrate_exact(self, linear: float, angular: float):
         """

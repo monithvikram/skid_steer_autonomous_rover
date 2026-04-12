@@ -158,7 +158,7 @@
   <gazebo reference="front_left_wheel">
     <material>Gazebo/White</material>
     <mu1>1.5</mu1>
-    <mu2>0.41</mu2>
+    <mu2>0.45</mu2>
     <kp>1e8</kp>
     <kd>1.0</kd>
     <minDepth>0.01</minDepth>
@@ -170,7 +170,7 @@
   <gazebo reference="front_right_wheel">
     <material>Gazebo/Black</material>
     <mu1>1.5</mu1>
-    <mu2>0.41</mu2>
+    <mu2>0.45</mu2>
     <kp>1e8</kp>
     <kd>1.0</kd>
     <minDepth>0.01</minDepth>
@@ -182,7 +182,7 @@
   <gazebo reference="rear_left_wheel">
     <material>Gazebo/White</material>
     <mu1>1.5</mu1>
-    <mu2>0.41</mu2>
+    <mu2>0.45</mu2>
     <kp>1e8</kp>
     <kd>1.0</kd>
     <minDepth>0.01</minDepth>
@@ -194,7 +194,7 @@
   <gazebo reference="rear_right_wheel">
     <material>Gazebo/Black</material>
     <mu1>1.5</mu1>
-    <mu2>0.41</mu2>
+    <mu2>0.45</mu2>
     <kp>1e8</kp>
     <kd>1.0</kd>
     <minDepth>0.01</minDepth>
