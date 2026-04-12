@@ -59,4 +59,4 @@ then integrating over time. Manual calibration. Raw engineering.
 
 ## Status
 
-Simulation setup complete.Building feedforward odom as precise as possible. Hardware deployment next.
+Simulation setup complete.Building feedforward odom as precise as possible. IMU intergration and Hardware deployment next.
