@@ -33,7 +33,7 @@ class OdomValidator(Node):
             Odometry, '/estimated_odom', 10)
         self.create_timer(0.02, self.timer_callback)
 
-    # SEE THIS !! THE ODOM WORKS RIGHT , BUT THE BELOW ACCUMULATION IS STUPID !
+    # SEE THIS !! THE ODOM WORKS RIGHT , BUT THE BELOW ACCUMULATION is weird ! bcz i dont reset the self.omega l and r while i finish timer callback
 
     def joint_cb(self, msg: JointState):
         for i, name in enumerate(msg.name):
