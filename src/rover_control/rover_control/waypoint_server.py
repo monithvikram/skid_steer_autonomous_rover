@@ -103,7 +103,7 @@ class WayPointServer(Node):
             msg.header.stamp = self.get_clock().now().to_msg()
             msg.header.frame_id = "base_link"
             msg.twist.linear.x = min(
-                self.Kp_linear * distance + (self.Kd_linear * distance_error) / dt, 1.0) if abs(angle_error) < 0.1 else 0.0
+                self.Kp_linear * distance + (self.Kd_linear * distance_error) / dt, 1.0) if abs(angle_error) < math.radians(5) else 0.0
             msg.twist.angular.z = max(min(
                 self.Kp_angular * angle_error + self.Kd_angular * d_angle_error,
                 1.5), -1.5)
