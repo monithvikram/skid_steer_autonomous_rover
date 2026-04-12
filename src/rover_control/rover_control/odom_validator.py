@@ -31,14 +31,24 @@ class OdomValidator(Node):
             JointState, '/joint_states', self.joint_cb, 10)
         self.odom_pub = self.create_publisher(
             Odometry, '/estimated_odom', 10)
-        self.create_timer(0.02, self.timer_callback)  # 20Hz
+        self.create_timer(0.02, self.timer_callback)
+
+    # SEE THIS !! THE ODOM WORKS RIGHT , BUT THE BELOW ACCUMULATION IS STUPID !
 
     def joint_cb(self, msg: JointState):
         for i, name in enumerate(msg.name):
-            if name == self.rl_joint:
-                self.omega_l = msg.velocity[i]
+            if name == self.fl_joint:
+                self.omega_l += msg.velocity[i]
+            elif name == self.fr_joint:
+                self.omega_r += msg.velocity[i]
+            elif name == self.rl_joint:
+                self.omega_l += msg.velocity[i]
             elif name == self.rr_joint:
-                self.omega_r = msg.velocity[i]
+                self.omega_r += msg.velocity[i]
+
+        self.omega_l = self.omega_l / 3
+        self.omega_r = self.omega_r / 3
+
         self.get_logger().info(f'L: {self.omega_l:.3f}  R: {self.omega_r:.3f}')
 
     def timer_callback(self):
