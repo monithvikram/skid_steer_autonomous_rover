@@ -36,6 +36,9 @@ class OdomValidator(Node):
     # SEE THIS !! THE ODOM WORKS RIGHT , BUT THE BELOW ACCUMULATION is weird ! bcz i dont reset the self.omega l and r while i finish timer callback
 
     def joint_cb(self, msg: JointState):
+
+        self.omega_l = 0.0
+        self.omega_r = 0.0
         for i, name in enumerate(msg.name):
             if name == self.fl_joint:
                 self.omega_l += msg.velocity[i]
@@ -46,8 +49,8 @@ class OdomValidator(Node):
             elif name == self.rr_joint:
                 self.omega_r += msg.velocity[i]
 
-        self.omega_l = self.omega_l / 3
-        self.omega_r = self.omega_r / 3
+        self.omega_l = self.omega_l / 2
+        self.omega_r = self.omega_r / 2
 
         self.get_logger().info(f'L: {self.omega_l:.3f}  R: {self.omega_r:.3f}')
 
