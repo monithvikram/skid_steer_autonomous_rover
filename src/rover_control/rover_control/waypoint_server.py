@@ -38,8 +38,11 @@ class WayPointServer(Node):
 
         self.publisher_ = self.create_publisher(
             TwistStamped, '/diff_drive_controller/cmd_vel', 10)
+        # self.odom_sub = self.create_subscription(
+        #     Odometry, '/diff_drive_controller/odom', self.odom_callback, 10,
+        #     callback_group=self.odom_callback_group)
         self.odom_sub = self.create_subscription(
-            Odometry, '/diff_drive_controller/odom', self.odom_callback, 10,
+            Odometry, '/imu_estimated_odom', self.odom_callback, 10,
             callback_group=self.odom_callback_group)
 
         self.action_server = ActionServer(
@@ -70,53 +73,77 @@ class WayPointServer(Node):
             f'New Waypoint Set: ({self.goal_x}, {self.goal_y})')
 
         feedback_msg = NavToWaypoint.Feedback()
+        rate = self.create_rate(30)  # 30 Hz control loop
 
-        rate = self.create_rate(60)  # 30 Hz control loop
+        # Use ROS 2 clock for Sim-to-Real compatibility
+        self.prev_time = self.get_clock().now().nanoseconds / 1e9
+        start_time = self.prev_time
 
         while rclpy.ok():
+            # 1. Calculate Spatial Errors
             dx = self.goal_x - self.x
             dy = self.goal_y - self.y
             distance = math.sqrt(dx**2 + dy**2)
-            distance_error = distance - self.prev_distance
+
+            target_angle = math.atan2(dy, dx)
+            # Normalize angle error to [-pi, pi]
+            angle_error = math.atan2(math.sin(target_angle - self.theta),
+                                     math.cos(target_angle - self.theta))
+
             # Publish feedback
             feedback_msg.current_position = PoseStamped()
             feedback_msg.current_position.pose.position.x = self.x
             feedback_msg.current_position.pose.position.y = self.y
             goal_handle.publish_feedback(feedback_msg)
 
+            # Exit condition
             if distance < 0.06:
                 self.stop_robot()
                 self.get_logger().info('Goal reached.')
                 break
 
-            angle_error = math.atan2(
-                math.sin(math.atan2(dy, dx) - self.theta),
-                math.cos(math.atan2(dy, dx) - self.theta))
+            # 2. Calculate Time Delta (dt)
+            current_time = self.get_clock().now().nanoseconds / 1e9
+            dt = current_time - self.prev_time
+            if dt <= 0.0:
+                dt = 0.001  # Prevent zero-division on ultra-fast loops
 
-            start_time = time.time()
-            dt = start_time - self.prev_time
-            d_distance_error = (distance_error - self.prev_distance_error) / dt
-            d_angle_error = (angle_error - self.prev_angle_error) / dt
-            self.prev_angle_error = angle_error
+            # 3. Calculate Derivatives (Rate of change of error)
+            d_distance = (distance - self.prev_distance) / dt
+            d_angle = (angle_error - self.prev_angle_error) / dt
+
+            # 4. PD Control Law
+            linear_control = (self.Kp_linear * distance) + \
+                (self.Kd_linear * d_distance)
+            angular_control = (self.Kp_angular * angle_error) + \
+                (self.Kd_angular * d_angle)
+
+            # 5. Kinematic Smoothing (The Skid-Steer Fix)
+            # Scale linear speed based on how well aligned we are.
+            # max(0, ...) prevents the robot from driving backward if angle > 90 deg.
+            alignment_factor = max(0.0, math.cos(angle_error))
 
             msg = TwistStamped()
             msg.header.stamp = self.get_clock().now().to_msg()
             msg.header.frame_id = "base_link"
+
             msg.twist.linear.x = min(
-                self.Kp_linear * distance + self.Kd_linear * d_distance_error, 1.0) if abs(angle_error) < math.radians(5) else 0.0
-            msg.twist.angular.z = max(min(
-                self.Kp_angular * angle_error + self.Kd_angular * d_angle_error,
-                0.8), -0.8)
+                linear_control, 1.0) * alignment_factor if abs(angle_error) < math.radians(5) else 0.0
+            msg.twist.angular.z = max(min(angular_control, 0.8), -0.8)
+
             self.publisher_.publish(msg)
+
+            # 6. Update state variables for next iteration
             self.prev_distance = distance
-            self.prev_time = start_time
+            self.prev_angle_error = angle_error
+            self.prev_time = current_time
 
             rate.sleep()
 
         goal_handle.succeed()
 
         result = NavToWaypoint.Result()
-        result.travel_time = int(time.time() - start_time)
+        result.travel_time = int(current_time - start_time)
         return result
 
     def stop_robot(self):

@@ -10,5 +10,28 @@
       <parameters>/home/monith/test_rover/src/rover_control/config/controllers.yaml</parameters>
     </plugin>
   </gazebo>
-
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <remapping>~/out:=/imu/data</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+      <imu>
+        <angular_velocity>
+          <x><noise type="gaussian"><mean>0.0</mean><stddev>0.005</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0.0</mean><stddev>0.005</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0.0</mean><stddev>0.005</stddev></noise></z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x><noise type="gaussian"><mean>0.0</mean><stddev>0.05</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0.0</mean><stddev>0.05</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0.0</mean><stddev>0.05</stddev></noise></z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
 </robot>

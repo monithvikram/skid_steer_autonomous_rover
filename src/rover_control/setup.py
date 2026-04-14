@@ -39,6 +39,7 @@ setup(
             'waypoint_server = rover_control.waypoint_server:main',
             'waypoint_client = rover_control.waypoint_client:main',
             'odom_validator = rover_control.odom_validator:main',
+            'imu_odom_validator = rover_control.imu_odom_validator:main',
         ],
     },
 )
