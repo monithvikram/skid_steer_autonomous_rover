@@ -3,6 +3,8 @@ from nav_msgs.msg import Odometry
 import math
 from rclpy.node import Node
 import rclpy
+from tf2_ros import TransformBroadcaster
+from geometry_msgs.msg import TransformStamped
 
 
 class ImuOdomValidator(Node):
@@ -33,6 +35,8 @@ class ImuOdomValidator(Node):
         self.odom_pub = self.create_publisher(
             Odometry, '/imu_estimated_odom', 10)
         self.create_timer(0.02, self.timer_callback)  # 50Hz
+
+        self.tf_broadcaster = TransformBroadcaster(self)
 
     def imu_cb(self, msg: Imu):
         self.angular_velocity = msg.angular_velocity.z
@@ -86,6 +90,22 @@ class ImuOdomValidator(Node):
         odom.pose.covariance = self._diag_covariance(0.01)
         odom.twist.covariance = self._diag_covariance(0.01)
         self.odom_pub.publish(odom)
+
+        t = TransformStamped()
+        t.header.stamp = now.to_msg()
+        t.header.frame_id = "odom"
+        t.child_frame_id = "base_link"
+
+        t.transform.translation.x = self.x
+        t.transform.translation.y = self.y
+        t.transform.translation.z = 0.0
+
+        t.transform.rotation.x = 0.0
+        t.transform.rotation.y = 0.0
+        t.transform.rotation.z = math.sin(self.heading / 2.0)
+        t.transform.rotation.w = math.cos(self.heading / 2.0)
+
+        self.tf_broadcaster.sendTransform(t)
 
     def _integrate_exact(self, linear: float, angular: float):
         if abs(angular) < 1e-3:

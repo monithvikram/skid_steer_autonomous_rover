@@ -38,9 +38,6 @@ class WayPointServer(Node):
 
         self.publisher_ = self.create_publisher(
             TwistStamped, '/diff_drive_controller/cmd_vel', 10)
-        # self.odom_sub = self.create_subscription(
-        #     Odometry, '/diff_drive_controller/odom', self.odom_callback, 10,
-        #     callback_group=self.odom_callback_group)
         self.odom_sub = self.create_subscription(
             Odometry, '/imu_estimated_odom', self.odom_callback, 10,
             callback_group=self.odom_callback_group)

@@ -17,7 +17,7 @@ class WayPointClient(Node):
 
         # ]
 
-        self.goals = [[3.0, 0.0], [3.0, 3.0], [0.0, 3.0], [0.0, 0.0]]
+        # self.goals = [[3.0, 0.0], [3.0, 3.0], [0.0, 3.0], [0.0, 0.0]]
 
         # self.goals = [[0.5, 0.5], [0.5, 0.5], [0.0, 0.0]]
 
@@ -41,13 +41,13 @@ class WayPointClient(Node):
 
         # ]
 
-        # self.goals = [
-        #     [2.0, 0.0],
-        #     [2.0, -2.0],
-        #     [0.0, -2.0],
-        #     [0.0, 0.0],
+        self.goals = [
+            [2.0, 0.0],
+            [2.0, -2.0],
+            [0.0, -2.0],
+            [0.0, 0.0],
 
-        # ]
+        ]
         self.goal_index = 0
         self.action_client = ActionClient(
             self, NavToWaypoint, 'waypoint_navigation')
