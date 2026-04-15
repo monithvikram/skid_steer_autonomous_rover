@@ -94,14 +94,11 @@ class ImuOdomValidator(Node):
         t = TransformStamped()
         t.header.stamp = now.to_msg()
         t.header.frame_id = "odom"
-        t.child_frame_id = "base_link"
+        t.child_frame_id = "base_footprint"
 
         t.transform.translation.x = self.x
         t.transform.translation.y = self.y
         t.transform.translation.z = 0.0
-
-        t.transform.rotation.x = 0.0
-        t.transform.rotation.y = 0.0
         t.transform.rotation.z = math.sin(self.heading / 2.0)
         t.transform.rotation.w = math.cos(self.heading / 2.0)
 

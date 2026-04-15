@@ -27,5 +27,3 @@
 
 </launch>
 
-
-<!-- need to increase friction in lateral - urdf, then to correc tthe drift of 20 degree by edstimating tue wheel separation in odom -->

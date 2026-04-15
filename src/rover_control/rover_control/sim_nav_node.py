@@ -12,7 +12,6 @@ import math
 # THEN, USE THE RELATION TO PUBLISH PWM USING LIVE_PWM_MSG TO YOUR MICROCONTROLLER
 
 
-
 class PwmSimNavNode(Node):
     def __init__(self):
         super().__init__('pwm_sim_nav_node')
@@ -63,10 +62,10 @@ class PwmSimNavNode(Node):
         d_angle_error = (angle_error - self.prev_angle_error) / 0.1
         self.prev_angle_error = angle_error
 
-
-    # IF U SIMULATE, THEN USE THIS TO PUBLISH CMD_VEL USING DIFF_DRIVE_CONTROLLER, 
+    # IF U SIMULATE, THEN USE THIS TO PUBLISH CMD_VEL USING DIFF_DRIVE_CONTROLLER,
     # WHICH HAS ACCESS TO COMMAND INTERFACE [velocity of joints] OF THE SIMULATED ROBOT
     # ELSE USE THE PWM_NODE TO PUBLISH PWM VALUES DIRECTLY TO THE ESC IN REAL BOT
+
     def pub_cmd_vel(self):
         msg = TwistStamped()
         msg.header.stamp = self.get_clock().now().to_msg()
@@ -82,7 +81,6 @@ class PwmSimNavNode(Node):
         msg = TwistStamped()
         msg.header.stamp = self.get_clock().now().to_msg()
         self.publisher_.publish(msg)
-
 
     def timer_callback(self):
         vl = (self.live_pwm_msg.pwm_l - 1500.0) / 200.0

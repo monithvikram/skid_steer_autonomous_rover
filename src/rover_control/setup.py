@@ -40,6 +40,7 @@ setup(
             'waypoint_client = rover_control.waypoint_client:main',
             'odom_validator = rover_control.odom_validator:main',
             'imu_odom_validator = rover_control.imu_odom_validator:main',
+            'flysky_driver = rover_control.flysky_driver:main',
         ],
     },
 )
