@@ -24,6 +24,7 @@
 
     <executable cmd="sleep 6 &amp;&amp; ros2 run rviz2 rviz2 -d $(var rviz_config)"
                 name="rviz2" shell="true"/>
-
+    <executable cmd="sleep 8 &amp;&amp; ros2 run rover_control imu_odom_validater --ros-args -p use_sim_time:=true"
+                name="imu_odom_validater" shell="true"/>
 </launch>
 
