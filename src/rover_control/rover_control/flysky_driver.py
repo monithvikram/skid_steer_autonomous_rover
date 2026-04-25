@@ -8,10 +8,11 @@ class FlyskyDriver(Node):
     def __init__(self):
         super().__init__('flysky_driver')
         self.cmd_vel_publisher_ = self.create_publisher(
-            TwistStamped, '/diff_drive_controller/cmd_vel', 10)
+            TwistStamped, 'flysky_driver/cmd_vel_stamped', 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
         self.joy_sub = self.create_subscription(
             Joy, '/joy', self.joy_callback, 10)
+        self.axes = [0.0, 0.0, 0.0, 0.0]
 
     def joy_callback(self, msg):
         self.axes = msg.axes

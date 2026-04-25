@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot name="demo">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.0375 0.0375 0.05" rpy="0.0 0.0 0.0" />
+            <mass value="108.428125" />
+            <inertia ixx="1.722425944010415" iyy="1.0447501627604168" izz="2.5864625651041653" ixy="0.0" iyz="0.0" ixz="0.0" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/demo_urdf/demo/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/demo_urdf/demo/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+</robot>

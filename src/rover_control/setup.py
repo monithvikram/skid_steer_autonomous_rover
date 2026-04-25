@@ -30,7 +30,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'nav_node_based_on_ddc_odom = rover_control.nav_node_rely_on_ddc_odom:main',
+            'nav_node = rover_control.nav_node:main',
             'sim_nav_node = rover_control.sim_nav_node:main',
 
             'teleop_to_pwm = rover_control.teleop_to_pwm:main',

@@ -19,7 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 "srv/GetWayPoints.srv"
 "action/NavToWaypoint.action"
 "msg/Pwm.msg"
-"msg/EstimatedTwist.msg"
+"msg/TwistStamped.msg"
 "msg/EstimatedOdom.msg"
 DEPENDENCIES rcl_interfaces std_msgs geometry_msgs action_msgs nav_msgs
 )

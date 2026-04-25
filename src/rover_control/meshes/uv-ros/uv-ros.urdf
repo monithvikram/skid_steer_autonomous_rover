@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<robot name="uv-ros">
+
+    <!-- BASE FOOTPRINT — ground projection, TF root -->
+    <link name="base_footprint"/>
+
+    <joint name="base_footprint_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <!-- BASE LINK -->
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.15 -0.025 0.014" rpy="0.0 0.0 0.0"/>
+            <mass value="3.2758"/>
+            <inertia ixx="0.00627" iyy="0.00292" izz="0.00876"
+                     ixy="0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual name="base_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/base_link.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision name="base_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/base_link.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- FRONT LEFT WHEEL -->
+    <link name="front_left_wheel">
+        <inertial>
+            <origin xyz="0.00344 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1608"/>
+            <inertia ixx="0.0001044" iyy="0.0000527" izz="0.0000527"
+                     ixy="0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual name="fl_wheel_visual">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision name="fl_wheel_collision">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- FRONT RIGHT WHEEL -->
+    <link name="front_right_wheel">
+        <inertial>
+            <origin xyz="0.00344 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1608"/>
+            <inertia ixx="0.0001044" iyy="0.0000527" izz="0.0000527"
+                     ixy="0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual name="fr_wheel_visual">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision name="fr_wheel_collision">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- REAR LEFT WHEEL -->
+    <link name="rear_left_wheel">
+        <inertial>
+            <origin xyz="0.00344 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1608"/>
+            <inertia ixx="0.0001044" iyy="0.0000527" izz="0.0000527"
+                     ixy="0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual name="rl_wheel_visual">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision name="rl_wheel_collision">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- REAR RIGHT WHEEL -->
+    <link name="rear_right_wheel">
+        <inertial>
+            <origin xyz="0.00344 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1608"/>
+            <inertia ixx="0.0001044" iyy="0.0000527" izz="0.0000527"
+                     ixy="0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual name="rr_wheel_visual">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision name="rr_wheel_collision">
+            <origin xyz="-0.00344 0.0 0.0" rpy="1.5708 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/home/monith/test_rover/src/rover_control/meshes/uv-ros/meshes/wheel-v1.stl"
+                      scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- JOINTS -->
+    <joint name="fl_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="front_left_wheel"/>
+        <origin xyz="0.06 -0.075 0.035" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="100" velocity="10"/>
+    </joint>
+
+    <joint name="fr_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="front_right_wheel"/>
+        <origin xyz="0.06 0.075 0.035" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="100" velocity="10"/>
+    </joint>
+
+    <joint name="rl_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_left_wheel"/>
+        <origin xyz="-0.06 -0.075 0.035" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="100" velocity="10"/>
+    </joint>
+
+    <joint name="rr_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_right_wheel"/>
+        <origin xyz="-0.06 0.075 0.035" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="100" velocity="10"/>
+    </joint>
+
+</robot>
