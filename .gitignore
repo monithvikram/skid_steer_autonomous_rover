@@ -4,5 +4,4 @@ log/
 .vscode/
 *.pyc
 __pycache__/
-README.md
 frames_2026* 
