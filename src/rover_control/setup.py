@@ -32,6 +32,7 @@ setup(
         'console_scripts': [
             'nav_node = rover_control.nav_node:main',
             'sim_nav_node = rover_control.sim_nav_node:main',
+            'nav_node_for_flysky_tx= rover_control.nav_node_for_flysky_tx:main',
 
             'teleop_to_pwm = rover_control.teleop_to_pwm:main',
             'pwm_to_odom = rover_control.pwm_to_odom_estimator:main',
@@ -41,6 +42,7 @@ setup(
             'odom_validator = rover_control.odom_validator:main',
             'imu_odom_validator = rover_control.imu_odom_validator:main',
             'flysky_driver = rover_control.flysky_driver:main',
+
         ],
     },
 )

@@ -21,7 +21,7 @@ class FlyskyDriver(Node):
         msg = TwistStamped()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = "base_link"
-        msg.twist.linear.x = self.axes[1]
+        msg.twist.linear.x = -1 * self.axes[1]
         msg.twist.angular.z = self.axes[0]
         self.cmd_vel_publisher_.publish(msg)
 

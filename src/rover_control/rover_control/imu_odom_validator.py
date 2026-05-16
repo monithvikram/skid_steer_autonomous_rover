@@ -34,7 +34,7 @@ class ImuOdomValidator(Node):
             Imu,        '/imu/data',    self.imu_cb,   100)
         self.odom_pub = self.create_publisher(
             Odometry, '/imu_estimated_odom', 10)
-        self.create_timer(0.02, self.timer_callback)  # 50Hz
+        self.create_timer(0.01, self.timer_callback)  # 100Hz
 
         self.tf_broadcaster = TransformBroadcaster(self)
 
